@@ -2,6 +2,8 @@
  *  燃动夏季
  *  一次性脚本，尝试领取会员奖励
  *  如果你已经是会员，则会领取奖励成功，若不是会员，则需要手动卡开
+[Script]
+cron "1 1,12,23 * * *" script-path=jd_redPacket.js, tag=京东全民开红包
  * */
 const $ = new Env('燃动夏季领会员奖励');
 const notify = $.isNode() ? require('./sendNotify') : '';
