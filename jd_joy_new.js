@@ -9,6 +9,9 @@
  export feedNum = 80
  默认双人跑
  export JD_JOY_teamLevel = 2
+ 
+[Script]
+cron "18 1,8,23 * * *" script-path=jd_redPacket.js, tag=京东全民开红包
  */
 
 const $ = new Env("宠汪汪二代目")
