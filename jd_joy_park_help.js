@@ -3,7 +3,8 @@
 更新时间：2021-7-7
 活动入口：京东极速版-赚金币-汪汪乐园
 靠前账号优先助力,建议晚上十一点半运行确保收益最大化
-30 23 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js
+[task_local]
+30 23 * * * jd_joy_park_help.js, tag=汪汪乐园每日助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
 */
 const $ = Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
