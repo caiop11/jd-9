@@ -7,7 +7,7 @@
 30 23 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js
 cron "30 23 * * *" script-path=jd_joy_park_help.js,tag=汪汪乐园每日助力
 */
-const $ = Env("汪汪乐园每日助力")
+const $ = new Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
 let cookiesArr = []
 let cookie = ''
