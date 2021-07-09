@@ -4,8 +4,10 @@
 活动入口：首页右侧下方
 备注：暂时先互助，优先向前助力
 1 10 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_olympicgames.js
+[Script]
+cron "1 10 * * *" script-path=jd_small_home.js, tag=全民运动会
 */
-const $ = Env("全民运动会")
+const $ = new Env("全民运动会")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
 let cookiesArr = []
 let cookie = ''
