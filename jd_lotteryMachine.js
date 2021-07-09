@@ -3,7 +3,8 @@
 author：yangtingxiao
 github： https://github.com/yangtingxiao
 活动入口：京东APP中各种抽奖活动的汇总
-
+[Script]
+cron "12 1,7,23 * * *" script-path=jd_redPacket.js, tag=京东抽奖机
 修改自用 By xxx
 更新时间：2021-05-25 8:50
  */
