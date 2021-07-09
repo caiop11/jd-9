@@ -9,16 +9,16 @@ Modified time: 2021-06-9 15:25:41
 ============QuantumultX==============
 [task_local]
 #京东资产变动通知
-2 9 * * * jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+5 9,18 * * * jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 ================Loon===============
 [Script]
-cron "2 9 * * *" script-path=jd_bean_change.js, tag=京东资产变动通知
+cron "5 9,18 * * *" script-path=jd_bean_change.js, tag=京东资产变动通知
 =============Surge===========
 [Script]
-京东资产变动通知 = type=cron,cronexp="2 9 * * *",wake-system=1,timeout=3600,script-path=jd_bean_change.js
+京东资产变动通知 = type=cron,cronexp="5 9,18 * * *",wake-system=1,timeout=3600,script-path=jd_bean_change.js
 
 ============小火箭=========
-京东资产变动通知 = type=cron,script-path=jd_bean_change.js, cronexpr="2 9 * * *", timeout=3600, enable=true
+京东资产变动通知 = type=cron,script-path=jd_bean_change.js, cronexpr="5 9,18 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东资产变动通知');
 const notify = $.isNode() ? require('./sendNotify') : '';
