@@ -8,7 +8,7 @@
 互助码shareCode请先手动运行脚本查看打印可看到
 一天只能帮助3个人。多出的助力码无效
 [Script]
-cron "5 6-18/8 * * *" script-path=jd_joy_park_help.js,tag=东东农场2
+cron "5 6-18/2 * * *" script-path=jd_joy_park_help.js,tag=东东农场2
 */
 const $ = Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
