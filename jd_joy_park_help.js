@@ -7,17 +7,8 @@
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 互助码shareCode请先手动运行脚本查看打印可看到
 一天只能帮助3个人。多出的助力码无效
-==========================Quantumultx=========================
-[task_local]
-#jd免费水果
-5 6-18/7 * * * jd_fruit.js, tag=东东农场1, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
-=========================Loon=============================
 [Script]
-cron "5 6-18/8 * * *" script-path=jd_fruit.js,tag=东东农场1
-=========================Surge============================
-东东农场1 = type=cron,cronexp="5 6-18/9 * * *",wake-system=1,timeout=3600,script-path=jd_fruit.js
-=========================小火箭===========================
-东东农场1 = type=cron,script-path=jd_fruit.js, cronexpr="5 6-18/10 * * *", timeout=3600, enable=true
+cron "5 6-18/8 * * *" script-path=jd_joy_park_help.js,tag=东东农场2
 */
 const $ = Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
