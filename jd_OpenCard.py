@@ -11,12 +11,10 @@ version = 'v1.2.2'
 readmes = """
 # JD入会领豆小程序
 ![JD入会领豆小程序](https://raw.githubusercontent.com/curtinlv/JD-Script/main/OpenCrad/resultCount.png)
-
 ## 使用方法
 #### [手机用户（参考） https://mp.weixin.qq.com/s/ih6aOURXWM-iKrhvMyR3mw](https://mp.weixin.qq.com/s/ih6aOURXWM-iKrhvMyR3mw)
 #### [PC用户 （参考） https://mp.weixin.qq.com/s/JmLxAecZAlEc4L2sZWnn1A](https://mp.weixin.qq.com/s/JmLxAecZAlEc4L2sZWnn1A)
 #### [v4-bot用户 （参考） https://github.com/curtinlv/JD-Script/pull/12#issue-652134788](https://github.com/curtinlv/JD-Script/pull/12#issue-652134788)
-
 ##  目录结构
     JD-Script/                  #仓库
     |-- LICENSE
@@ -27,7 +25,6 @@ readmes = """
     |   |-- Readme.md           # 说明书
     |   `-- start.sh            # shell脚本（非必要）
     `-- README.md
-
     log目录结构、临时目录（可删除）：
     log
     ├── memory.json                        # 记忆、统计功能临时存放参数
@@ -35,17 +32,14 @@ readmes = """
     ├── 入会N豆以上的shopid-2021-05-23.txt   # 记录满足入会条件的shopid
     ├── 入会汇总.txt                        # 记录所有入会店铺送豆的加入、注销链接
     ├── 可退会账号【账号id】.txt              # 记录跑脚本之前已经过入会且目前送豆的注销链接（可优先退会）
-
 ### `【兼容环境】`
     1.Python3.3+ 环境
     2.兼容ios设备软件：Pythonista 3、Pyto(已测试正常跑，其他软件自行测试)   
     3.Windows exe 
-
     安装依赖模块 :
     pip3 install requests
     执行：
     python3 jd_OpenCard.py
-
     start.sh 脚本运行方法：
     1.适合定时任务或不想依赖ini配置文件。 
     2.支持单号跑多开，如
@@ -54,7 +48,6 @@ readmes = """
     3.定时任务（参考）：
        0 8 * * * sh /home/curtin/JD-Script/OpenCard/start.sh
        2 8 * * * sh /home/curtin/JD-Script/OpenCard/start_2.sh
-
 ## `【更新记录】`
     2021.6.19: (v1.2.2)
         * 修复多线程报错
@@ -84,11 +77,9 @@ readmes = """
         * 新增远程获取shopid功能
             - isRemoteSid=yes #开启
         * 修改已知Bug
-
     2021.5.9：(v1.0.4 Beta)
         * 优化代码逻辑
         * 打包exe版本测试
-
     2021.5.8：(v1.0.3)
         * 优化记忆功能逻辑：
             - cookiek个数检测
@@ -96,18 +87,15 @@ readmes = """
             - 上一次中断最后记录的账号id检测不存在本次ck里面
             - 临时文件log/memory.json是否存在
             - 以上任意一条命中则记忆接力功能不生效。
-
     2021.5.7：(v1.0.2)
         * 优化代码逻辑
         * 修复已知Bug
-
     2021.5.5：(v1.0.1)
         * 新增记忆功能，如中断后下次跑会接着力跑（默认开启）
             - memory= True
         * 新增仅记录shopid，不入会功能（默认关闭）
             - onlyRecord = no
         * 修复已知Bug
-
     2021.5.4：(v1.0.0)
         * 支持多账号
             - JD_COOKIE=pt_key=xxx;pt_pin=xxx;&pt_key=xxx;pt_pin=xxx; #多账号&分隔
@@ -119,10 +107,8 @@ readmes = """
             - log/可销卡汇总.txt #记录开卡送豆的店铺销卡链接
             - log/shopid-yyyy-mm-dd.txt #记录当天所有入会送豆的shopid
             - log/可销卡账号xxx.txt #记录账号可销卡的店铺
-
 ### `【账号参数配置说明】`
 ### 主配置文件[ OpenCardConfig.ini ] 请保持utf-8默认格式
-
  变量  | 值  | 说明
  ---- | ----- | ------  
  JD_COOKIE  | pt_key=xxx;pt_pin=xxx;  | 必要(多账号&分隔) 
@@ -137,9 +123,7 @@ readmes = """
         export JD_COOKIE='pt_key=xxx;pt_pin=xxx;' (多账号&分隔)
         export openCardBean=30
         export xxx=xxx
-
 #### Ps:您可以到以下途径获取最新的shopid.txt，定期更新：
-
 ###### [GitHub仓库 https://github.com/curtinlv/JD-Script](https://github.com/curtinlv/JD-Script) 
 ###### [Gitee仓库 https://gitee.com/curtinlv/JD-Script](https://gitee.com/curtinlv/JD-Script)
 ###### [TG频道 https://t.me/TopStyle2021](https://t.me/TopStyle2021)
@@ -148,12 +132,9 @@ readmes = """
 ![TopStyle](https://gitee.com/curtinlv/img/raw/master/gzhcode.jpg)
 # 
     @Last Version: %s
-
     @Last Time: 2021-06-19 13:55
-
     @Author: Curtin
 #### **仅以学习交流为主，请勿商业用途、禁止违反国家法律 ，转载请留个名字，谢谢!** 
-
 # End.
 [回到顶部](#readme)
 """ % version
@@ -1294,5 +1275,3 @@ def start():
     exitCodeFun(0)
 if __name__ == '__main__':
     start()
-
-    
