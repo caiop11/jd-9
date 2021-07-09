@@ -9,12 +9,14 @@
 新手上路勿黑勿喷
 TG通知群 https://t.me/ningmeng999
 微信公众号:柠檬玩机交流
+[Script]
+cron "0 */1 * * *" script-path=jd_joy-park.js, tag=柠檬旺财乐园
 */
 // [task_local]
 // #柠檬旺财乐园
 // 0 */1 * * * 
 
-const $ = new Env('柠檬旺财乐园新手上路版');
+const $ = new Env('柠檬旺财乐园');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
