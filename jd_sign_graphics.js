@@ -3,7 +3,8 @@
 只支持nodejs环境
 需要安装依赖 
 npm i png-js 或者 npm i png-js -S
-
+[Script]
+cron "14 10 * * *" script-path=jd_sign_graphics.js, tag=京东签到图形验证
 */
 
 const validator = require('./jdJRValidator_Pure.js');
