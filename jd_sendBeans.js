@@ -1,6 +1,8 @@
 /*
 * 来客有礼小程序
 * cron 45 4 * * *
+[Script]
+cron "45 4 * * *" script-path=jd_sendBeans.js, tag=来客有礼小程序
 * */
 const $ = new Env('送豆得豆');
 const notify = $.isNode() ? require('./sendNotify') : '';
