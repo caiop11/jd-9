@@ -1,3 +1,8 @@
+/*
+点点券二代目
+[Script]
+cron "20 10,22 * * *" script-path=jd_big_winner.js,tag=省钱大赢家之翻翻乐
+*/
 const $ = new Env('点点券二代目');
 const https = require('https');
 const fs = require('fs/promises');
