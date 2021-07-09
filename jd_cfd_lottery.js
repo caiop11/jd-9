@@ -22,7 +22,7 @@ cron 5 14 * * * jd_cfd.js
 [Script]
 cron "5 14 * * *" script-path=jd_cfd.js,tag=京喜财富岛-娱乐中心-抽奖
  */
-#const $ = new Env('京喜财富岛-娱乐中心-抽奖');
+//const $ = new Env('京喜财富岛-娱乐中心-抽奖');
 !(function (t, r) {
     "object" == typeof exports
       ? (module.exports = exports = r())
