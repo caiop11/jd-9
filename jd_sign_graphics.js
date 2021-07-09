@@ -6,8 +6,8 @@ npm i png-js 或者 npm i png-js -S
 
 */
 
-const validator = require('./JDJRValidator_Pure.js');
-const Faker=require('./JDSign_graphics_validate.js') 
+const validator = require('./jdJRValidator_Pure.js');
+const Faker=require('./jdSign_graphics_validate.js') 
 
 const $ = new Env('京东签到图形验证');
 const notify = $.isNode() ? require('./sendNotify') : '';
