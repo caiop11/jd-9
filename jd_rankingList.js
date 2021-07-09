@@ -1,7 +1,8 @@
 /*
 
 活动入口：京东APP首页-更多频道-排行榜-悬浮按钮
-
+[Script]
+cron "10 9,23 * * *" script-path=jd_redPacket.js, tag=京东全民开红包
 自用
 author：yangtingxiao
 github： https://github.com/yangtingxiao
