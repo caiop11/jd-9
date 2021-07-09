@@ -1,10 +1,24 @@
 /*
-汪汪乐园每日助力
-更新时间：2021-7-7
-活动入口：京东极速版-赚金币-汪汪乐园
-靠前账号优先助力,建议晚上十一点半运行确保收益最大化
+东东水果:脚本更新地址 jd_fruit.js
+更新时间：2021-5-18
+活动入口：京东APP我的-更多工具-东东农场
+东东农场活动链接：https://h5.m.jd.com/babelDiy/Zeus/3KSjXqQabiTuD1cJ28QskrpWoBKT/index.html
+已支持IOS双京东账号,Node.js支持N个京东账号
+脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+互助码shareCode请先手动运行脚本查看打印可看到
+一天只能帮助3个人。多出的助力码无效
+==========================Quantumultx=========================
 [task_local]
-30 23 * * * jd_joy_park_help.js, tag=汪汪乐园每日助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
+#jd免费水果
+5 6-18/6 * * * jd_fruit.js, tag=汪汪乐园每日助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
+=========================Loon=============================
+[Script]
+cron "5 6-18/6 * * *" script-path=jd_fruit.js,tag=汪汪乐园每日助力
+=========================Surge============================
+汪汪乐园每日助力 = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=3600,script-path=jd_fruit.js
+=========================小火箭===========================
+汪汪乐园每日助力 = type=cron,script-path=jd_fruit.js, cronexpr="5 6-18/6 * * *", timeout=3600, enable=true
+jd免费水果 搬的https://github.com/liuxiaoyucc/jd-helper/blob/a6f275d9785748014fc6cca821e58427162e9336/fruit/fruit.js
 */
 const $ = Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
