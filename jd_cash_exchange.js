@@ -3,8 +3,10 @@
 需要填写exchangeAccounts参数，兑换多少取决于账号
 TG学习交流群https://t.me/cdles
 0 0 * * * https://raw.githubusercontent.com/cdle/jd_study/main/jd_cash_exchange.js
+[Script]
+cron "0 0 * * *" script-path=jd_cash_exchange.js, tag=签到领现金兑换
 */
-const $ = Env("签到领现金兑换")
+const $ = new Env("签到领现金兑换")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
 let cookiesArr = []
 let exchangeAccounts //不指定默认为所有账号兑换10红包，部分账号会出现参数错误的提示
