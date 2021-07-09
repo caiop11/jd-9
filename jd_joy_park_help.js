@@ -1,5 +1,5 @@
 /*
-东东水果:脚本更新地址 jd_fruit.js
+东东水果:脚本更新地址 jd_joy_park_help.js
 更新时间：2021-5-18
 活动入口：京东APP我的-更多工具-东东农场
 东东农场活动链接：https://h5.m.jd.com/babelDiy/Zeus/3KSjXqQabiTuD1cJ28QskrpWoBKT/index.html
@@ -10,7 +10,14 @@
 ==========================Quantumultx=========================
 [task_local]
 #jd免费水果
-5 6-18/6 * * * jd_fruit.js, tag=汪汪乐园每日助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
+5 6-18/7 * * * jd_fruit.js, tag=东东农场1, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
+=========================Loon=============================
+[Script]
+cron "5 6-18/8 * * *" script-path=jd_fruit.js,tag=东东农场1
+=========================Surge============================
+东东农场1 = type=cron,cronexp="5 6-18/9 * * *",wake-system=1,timeout=3600,script-path=jd_fruit.js
+=========================小火箭===========================
+东东农场1 = type=cron,script-path=jd_fruit.js, cronexpr="5 6-18/10 * * *", timeout=3600, enable=true
 */
 const $ = Env("汪汪乐园每日助力")
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
