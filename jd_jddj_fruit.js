@@ -1,3 +1,10 @@
+/*
+京东到家果园：jd_jddj_fruit.js
+[Script]
+cron "25 0,9,18 * * *" script-path=jd_jddj_fruit.js, tag=京东到家果园
+*/
+
+const $ = new Env('京东到家果园');
 let isNotify = true;//是否通知,仅限nodejs
 let ckPath = './jdCookie.js';//ck路径,环境变量:JDDJ_CKPATH
 const $ = new API("jd_jddj_fruit");
