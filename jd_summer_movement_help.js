@@ -222,13 +222,15 @@ async function dealReturn(type, res) {
       }
       break;
     case 'olypicgames_guradHome':
-      console.log(res)
       if (data.data && data.data.bizCode === 0) {
         console.log(`SH互助码：${data.data.result && data.data.result.inviteId || '助力已满，获取助力码失败\n'}`);
         if (data.data.result && data.data.result.inviteId) {
-          if (data.data.result.inviteId) $.ShInviteList.push(data.data.result.inviteId);
-          console.log(`守护金额：${Number(data.data.result.activityLeftAmount || 0)} 护盾剩余：${timeFn(Number(data.data.result.guardLeftSeconds || 0) * 1000)} 离结束剩：${timeFn(Number(data.data.result.activityLeftSeconds || 0) * 1000)}`)
-          if(data.data.result.activityLeftSeconds == 0) $.Shend = true
+          let look = data.data.result
+          look.assistanceVOList = look.assistanceVOList.length
+          console.log(JSON.stringify(look))
+          if (look.inviteId) $.ShInviteList.push(look.inviteId);
+          console.log(`守护金额：${Number(look.activityLeftAmount || 0)} 助力次数：${look.assistanceVOList} 护盾剩余：${timeFn(Number(look.guardLeftSeconds || 0) * 1000)} 离结束剩：${timeFn(Number(look.activityLeftSeconds || 0) * 1000)}`)
+          if(look.activityLeftSeconds == 0) $.Shend = true
         }
         $.taskList = data.data.result && data.data.result.taskVos || [];
       } else if (data.data && data.data.bizMsg) {
