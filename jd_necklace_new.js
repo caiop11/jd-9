@@ -5,8 +5,8 @@
 #点点券
 20 0,20 * * * jd_necklace.js, tag=点点券, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 [Script]
-cron "10 0,20 * * *" script-path=jd_speed.js,tag=点点券二代目
- */
+cron "10 0,20 * * *" script-path=jd_necklace_new.js,tag=点点券二代目
+*/
 const $ = new Env('点点券二代目');
 const ZooFaker=require('./ZooFaker_Necklace.js') 
 let allMessage = ``;
