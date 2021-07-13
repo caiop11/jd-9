@@ -9,9 +9,9 @@
 新手上路勿黑勿喷
 TG通知群 https://t.me/ningmeng999
 微信公众号:柠檬玩机交流
-[Script]
-cron "0 */1 * * *" script-path=jd_joy-park.js, tag=柠檬旺财乐园
 */
+//[Script]
+//cron "0 */1 * * *" script-path=jd_joy-park.js, tag=柠檬旺财乐园
 // [task_local]
 // #柠檬旺财乐园
 // 0 */1 * * * 
