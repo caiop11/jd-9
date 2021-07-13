@@ -18,7 +18,7 @@ cron "5 8,13,19 * * *" script-path=jd_cfd.js,tag=京喜财富岛
 ============小火箭=========
 京喜财富岛 = type=cron,script-path=jd_cfd.js, cronexpr="5 8,13,19 * * *", timeout=3600, enable=true
 */
-const $ = new Env("京喜财富岛");
+//const $ = new Env("京喜财富岛");
 const {format} = require('date-fns');
 const axios = require('axios');
 // import USER_AGENT from './TS_USER_AGENTS';
