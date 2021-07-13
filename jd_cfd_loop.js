@@ -1,9 +1,8 @@
 /*
-cron 0 * * * * jd_cfd_loop.js
 [Script]
-cron "5 8,13,19 * * *" script-path=jd_cfd_loop.js,tag=财富岛
+cron "15 0,12,23 * * *" script-path=jd_cfd_loop.js,tag=财富岛
 */
-const $ = new Env("财富岛");
+//const $ = new Env("财富岛");
 const {format} = require('date-fns');
 const axios = require('axios');
 const USER_AGENT = require('./USER_AGENTS').USER_AGENT;
