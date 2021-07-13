@@ -5,7 +5,7 @@
 只支持Node.js支持N个京东账号
 脚本兼容: Node.js
 cron 1 7,12,19 * * * jd_beauty.js
- */
+*/
 const $ = new Env('美丽研究院');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
