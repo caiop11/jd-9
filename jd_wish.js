@@ -10,7 +10,7 @@ TG通知群 https://t.me/ningmeng999
 [Script]
 cron "0 8,12 * * *" script-path=jd_wish.js,tag=京东众筹许愿池 
 */
-const $ = new Env('京东众筹许愿池 ');
+const $ = new Env('柠檬众筹许愿池');
 const notify = $.isNode() ? require("./sendNotify") : "";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 let timestamp = Date.now();
